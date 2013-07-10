@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var app = express.createServer(express.logger());
 
-app.engine('.html', require('jade'));
+app.engine('html', require('ejs').renderFile);
 
 
 
